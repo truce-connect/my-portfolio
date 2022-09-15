@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+   <h1>GROCERRY BUD</h1>
+ <section class="Container">
+    <input type="text" class="only-input">
+  <button class="sumbit"> submit</button>
+ </section>
+ <div class="bacon">
+    <p>bacon</p>   
+ <div class="edit"><a href=""><i class="fa fa-edit"></i></a></div>
+<div class = 'trash'><a href=""><i class="fa fa-trash"></i></a></div>
+  <div class="class-link"> <a href="">  clear item </a></div>
+    </div>
+
+   <script src="/fat.js"></script>
+</body>
+</html>
+<script>
+   var  truceArray = ["jonhnson", "paul", "james"];
+        truceArray.shift();
+        truceArray.unshift("peter");
+        console.log(truceArray)
+        function alowResuble(){
+          console.log("how va");
+        }
+        alowResuble();
+        function graceBoy(a,b){
+          console.log(a-b)
+        }
+        graceBoy(10,5);
+        function faliGuy(b,c){
+          console.log(b+c)
+        }
+        faliGuy(21,10);
+
+        var myGlobal = 10;
+        function fun1(){
+          oopsGlobal = 5;
+        }
+        function fun2(){
+          var output = "";
+          if (typeof myGlobal != undefined){
+            output += " myGlobal: "+ myGlobal;
+          }
+          if (typeof oopsGlobal != undefined){
+            output += " oopsGlobal: "+ oopsGlobal;
+          }
+        }
+              
+      
+        fun1();
+        fun2();
+
+        function humNum(num) {
+          return num-7;
+        } 
+        console.log(humNum(10));
+
+        function timesFive(numb){
+          return numb*5;
+        }
+        console.log(timesFive(9));
+
+        var sum = 0;
+         
+        function addthree(){
+          return sum + 5;
+        }
+        console.log (addthree(8))
+        var changed = 0;
+         function change(num){
+           return (num*5)/5;
+         }
+         changed = change(10);
+         console.log(changed);
+         function nextInline(arr, item){
+             arr.push(item);
+          return arr.shift(item);
+         }
+         var testArr=[1,2,3,4,5,]
+         console.log(" before: " + JSON.stringify(testArr));
+         console.log(nextInline(testArr,6));
+         console.log(" after: " + JSON.stringify(testArr));
+
+         function ourTrueOrFalse(wasIsTrue){
+                  if(wasIsTrue){
+                    return "na true ehn talk";
+                  }
+                    return "na lie ehn talk";
+                }
+
+                console.log(ourTrueOrFalse(false));
+                function trueEqual(tboy){
+                  if(tboy===12){
+                    return "equal";
+                  }
+                    return "not equal"   
+                }
+                console.log(trueEqual(12));
+                function furMore(vac){
+                  if( vac!==99){
+                    return "no be him"
+                  }
+                  return " na him"
+                }
+                console.log(furMore("99"))
+                function greaterThan(val){
+                  if(val <= 12){
+                    return "e small pass 12";
+                  } 
+                  if(val < 24){
+                    return "e small pass 24";
+                  }
+                  if(val==24){
+                    return "na 24 be this gangan";
+                  }
+
+                  return "e big pass 24";     
+                }
+                console.log(greaterThan(24))
+
+                function textLogical(von){
+                  if (von<50 >25) {
+                    return "yes na so";
+                  }
+                  return "no be so";
+                }
+                console.log(textLogical(100));
+              function testElse(vac){
+                
+                 if(vac > 19){
+                 return "big pass 19";
+                 }else if (vac<10){
+                  return "e small pass 10 no reason am";
+                  }else{
+                  return  "between 5 and 10"; 
+                 }
+                }
+
+              console.log (testElse(20))
+              function testSize(num){
+                if(num<5){
+                  return "tiny"
+                }else if(num<10){
+                  return "small"
+                }else if (num <15){
+                  return "medium"
+                }else if(num<20){
+                  return "large"
+                }else{
+                  return "huge"
+                }
+              }
+              console.log(testSize(2))
+              var names =["hole-in-one","eagle", "birdie","par","bogey" ,"Double Bogey", "Go Home" ];
+              function golfScore( par,stroke){
+                if (stroke == 1) {
+                  return names[0]
+              }else if(stroke<= par-2){
+                return names[1]
+              }else if(stroke ==par-1){
+                return names[2]
+              }else if(stroke ==par){
+                return names[3]
+              }else if (stroke == par +1){
+              return names[4]
+            }else if(stroke==par+2){
+              return names[5]
+            }else if ( stroke >= par+2)
+            return names[6]
+            } 
+            console.log(golfScore(2,1))
+            function caseSwitch(val){
+              var answer ="";
+              switch (val) {
+                case 1 : 
+               answer = "beta";
+                  break;
+                case 2 :
+                 answer = 'alpha';
+                  break;
+                  case 3:
+                    answer ="gama";
+                  break;
+                 case 4: 
+                answer = " buhari";
+                 break;
+                 case 5: 
+                 answer = "david";
+                 break;
+                 default :
+                 answer ="e no dey here";
+              }
+              return  answer;
+            }
+             console.log(caseSwitch(17))
+             function doubleLevel(vam) {
+              var count = "";
+              switch (vam) {
+                case 1:
+                case 2:
+                case 3:
+                  count = "low";
+                break;
+                case 4:
+                case 5:
+                case 6:
+                  count = "mid"
+                  break;
+                  case 7:
+                 case 8:
+                 case 9:
+                  count = "high";
+                 break;
+               default:
+                count = "no get level";
+                break;
+              }
+              return count;
+             } 
+             console.log(doubleLevel(9));
+             function isLess(a, b) {
+              return a<b ;
+               
+             }
+          console.log(isLess(10,15))
+          var count  = 0;
+          function cc(card){
+            switch (card) {
+              case 2:
+              case 3:
+              case 4:
+              case 5:
+              case 6:
+               count++;
+               break;
+               case 10: 
+               case "j":
+               case "Q":
+               case "k":
+               case "A":
+                count--;
+                break;
+              
+            }
+            var holdbet = "hold";
+            if (count > 0) {
+              holdbet = "bet"
+              
+            }
+           return count + ""+ holdbet;
+          }
+        cc(2);  cc("Q");cc(6); cc("k"); cc("j");cc("A");
+        console.log(cc(45));
+        var ourSheep ={
+          "name":"osupa",
+          "tail": 1,
+          "leg":4,
+          "mouth":2,
+          "friends":[]
+        };
+        console.log(ourSheep["name"]);
+        var farObj = {
+          12: "suberu",
+          13: "silifa",
+          14: "montana"
+        };
+        var agbaPlayer=12;
+        var omoOgbon = farObj[agbaPlayer];
+        console.log(farObj[14]);
+           var spDog ={
+             "name":"selimo",
+             "tail":4,
+             "friend":"isantako"
+           };
+           spDog.name ="shaki selimo";
+           spDog['bark']="woof woof"
+           delete spDog.bark
+           console.log(spDog.bark)
+           var lookup ={
+            "alpha": "adams",
+            "bravo": "boston",
+            "charlie": "chicago",
+            "delta": "denver",
+            "echo": "easy",
+            "foxtrot": "frank"
+           };
+           console.log(lookup.bravo)
+           var tyObj = {
+              "gift": "pony",
+              "pet": "kitchen",
+               "bed":  "sleigh"
+           };
+           function checkObj(check) {
+            if (tyObj.hasOwnProperty(check)) { 
+              return tyObj[check]
+            }else{
+              return "not found"
+            }
+            
+           }
+           console.log(checkObj("grass"))
+           var storage = {
+            "car":{
+              "inside":{
+                "passenger seat": "crumbs",
+                 "glover box": "map",
+              },
+              "outside":{
+                'trunk':"jack"
+              }
+                
+              }
+              
+            };
+            var glooveBoxContents = storage.car.inside["passenger seat"];
+            console.log(glooveBoxContents);
+            var myPlant =[
+              {
+                type:"flowers",
+                list:[
+                  "rose",
+                  "tulip",
+                  "dandelion"
+                ]
+              },
+              {
+                "type":"trees",
+                "list":[
+                  "fir",
+                  "pine",
+                  "birch"
+                ]
+              }
+
+            ];
+              var secondTree = myPlant[0].list[2];
+              console.log(secondTree);
+
+              var collection ={
+                "2548":{
+                  album:"God love",
+                  artist:"eben " ,
+                  track:[
+                    "let it rock",
+                     " you give love name"
+
+                  ]
+
+                },
+                "2358":{
+                  album:"love ban",
+                  artist:"sinachj " ,
+                  track:[
+                    "let it rain ",
+                     " ban filled with plenty"
+
+                  ]
+
+                },
+                "2628":{
+                  album:"God grace",
+                  artist:"bro theo " ,
+                  track:[
+                    " my rock",
+                     " his love name"
+
+                  ]
+
+                },
+                "2238":{
+                  album:"love filled",
+                  artist:"moses akoh " ,
+                  track:[
+                    "testimony",
+                     " volume of the book"
+
+                  ]
+
+                },
+              }
+           
+</script>
+
+
+
+
+<!--  jquery u1
+ jquery slider plugin: jqueryscript.net
+wow slider   -->
+
+

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top: 100px;
+    
+}
+.wrapper{
+    border: 3px solid black;
+    padding: 80px;
+}
+h1{
+  margin-bottom: 30px;
+
+}
+.Container{
+    margin-bottom: 30px;
+}
+input{
+    width: 520px;
+   
+}
+button{
+  background: blue;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+}
+.bacon{
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+}
+.bacon p{
+    color: blue;
+    font: 2rem;
+}
+.bacon .fa{
+    color: red;
+}
+.class-link{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.class-link  a{
+    color: red;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
