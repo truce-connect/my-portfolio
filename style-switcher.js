@@ -23,4 +23,4 @@ const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
                 }
                  
                  })
-      }
+      };
